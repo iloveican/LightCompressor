@@ -30,11 +30,11 @@ You can pass one of a 5 video qualities; VERY_HIGH, HIGH, MEDIUM, LOW, OR VERY_L
 return when (quality) {
     VideoQuality.VERY_LOW -> (bitrate * 0.1).roundToInt()
     VideoQuality.LOW -> (bitrate * 0.2).roundToInt()
-    VideoQuality.MEDIUM -> (bitrate * 0.3).roundToInt()
-    VideoQuality.HIGH -> (bitrate * 0.4).roundToInt()
-    VideoQuality.VERY_HIGH -> (bitrate * 0.6).roundToInt()
+    VideoQuality.MEDIUM -> (bitrate * 0.4).roundToInt()
+    VideoQuality.HIGH -> (bitrate * 0.5).roundToInt()
+    VideoQuality.VERY_HIGH -> (bitrate * 0.75).roundToInt()
 }
-
+ 
 when {
    width >= 1920 || height >= 1920 -> {
       newWidth = (((width * 0.5) / 16).roundToInt() * 16)

@@ -207,8 +207,8 @@ object CompressorUtils {
             VideoQuality.VERY_LOW -> (bitrate * 0.1).roundToInt()
             VideoQuality.LOW -> (bitrate * 0.2).roundToInt()
             VideoQuality.MEDIUM -> (bitrate * 0.3).roundToInt()
-            VideoQuality.HIGH -> (bitrate * 0.4).roundToInt()
-            VideoQuality.VERY_HIGH -> (bitrate * 0.6).roundToInt()
+            VideoQuality.HIGH -> (bitrate * 0.5).roundToInt()
+            VideoQuality.VERY_HIGH -> (bitrate * 0.75).roundToInt()
         }
     }
 
